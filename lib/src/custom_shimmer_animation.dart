@@ -36,9 +36,9 @@ class CustomSplashAnimation extends CustomPainter {
       stops: stops,
       colors: [
         Colors.transparent,
-        (color).withValues(alpha: 0.05),
-        (color).withValues(alpha: opacity),
-        (color).withValues(alpha: 0.05),
+        (color).withAlpha(alpha: 0.05),
+        (color).withAlpha(alpha: opacity),
+        (color).withAlpha(alpha: 0.05),
         Colors.transparent
       ],
     ).createShader(
